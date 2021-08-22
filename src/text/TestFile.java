@@ -7,5 +7,9 @@ package text;
  * @create: 2021-08-23 00:52
  **/
 public class TestFile {
-    
+
+    public void testFiles(){
+        System.out.println("测试文件");
+    }
+
 }
