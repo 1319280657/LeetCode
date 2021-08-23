@@ -8,7 +8,7 @@ package text;
  **/
 public class TestFile {
 
-    public void testFiles(){
+    public void testFiles() {
         System.out.println("测试文件");
     }
 
