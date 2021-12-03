@@ -81,18 +81,7 @@ public class Main {
 /*        RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
         removeLinkedListElements.test();*/
         MaxPriorityQueue maxPriorityQueue = new MaxPriorityQueue();
-        maxPriorityQueue.insert(1);
-        maxPriorityQueue.insert(2);
-        maxPriorityQueue.insert(5);
-        maxPriorityQueue.insert(8);
-        maxPriorityQueue.insert(4);
-        maxPriorityQueue.insert(3);
-        maxPriorityQueue.insert(1);
-        maxPriorityQueue.insert(9);
-
-        maxPriorityQueue.showResult();
-        System.out.println();
-        maxPriorityQueue.popResult();
+        maxPriorityQueue.test();
 
 
     }

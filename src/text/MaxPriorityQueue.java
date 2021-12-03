@@ -41,8 +41,9 @@ public class MaxPriorityQueue {
             }
         }
     }
-    public Integer pop(){
-        if (queueCount.equals(0)){
+
+    public Integer pop() {
+        if (queueCount.equals(0)) {
             System.out.println("没有数据了！");
             return null;
         }
@@ -52,17 +53,18 @@ public class MaxPriorityQueue {
         sink();
         return result;
     }
+
     //下沉，将根节点的数据下沉到合适的位置上
-    private  void sink(){
-        Integer index =0;
-        while ((index*2+1) < queueCount) {
+    private void sink() {
+        Integer index = 0;
+        while ((index * 2 + 1) < queueCount) {
             if (queues[index] < queues[index * 2]) {
                 exchange(index, index * 2);
                 index = index * 2;
-            } else if (queues[index] < queues[index * 2 +1 ]){
-                exchange(index, index * 2 +1);
-                index = index * 2 +1;
-            }else {
+            } else if (queues[index] < queues[index * 2 + 1]) {
+                exchange(index, index * 2 + 1);
+                index = index * 2 + 1;
+            } else {
                 break;
             }
         }
@@ -76,7 +78,7 @@ public class MaxPriorityQueue {
 
     public void showResult() {
         for (int i = 0; i < queues.length; i++) {
-            System.out.print("queues[" + i + "] = " +queues[i]+'\t');
+            System.out.print("queues[" + i + "] = " + queues[i] + '\t');
 
         }
         System.out.println();
@@ -84,12 +86,25 @@ public class MaxPriorityQueue {
 
     public void popResult() {
         System.out.println("popResult begin");
-        for (int i = 0; queueCount>0; i++) {
-            System.out.print("queues[" + i + "] = " +pop()+'\t');
+        for (int i = 0; queueCount > 0; i++) {
+            System.out.print("queues[" + i + "] = " + pop() + '\t');
             showResult();
         }
         System.out.println("\npopResult end");
 
+    }
+
+    public void test() {
+        insert(1);
+        insert(2);
+        insert(5);
+        insert(8);
+        insert(4);
+        insert(3);
+        insert(1);
+        insert(9);
+        showResult();
+        popResult();
     }
 
 }
