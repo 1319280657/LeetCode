@@ -1,8 +1,9 @@
 import text.*;
 
+import java.util.PriorityQueue;
+
 
 public class Main {
-
 
 
     public static void main(String[] args) {
@@ -77,8 +78,21 @@ public class Main {
         intersectionOfTwoLinkedLists.test();*/
    /*     FirstMissingPositive firstMissingPositive = new FirstMissingPositive();
         firstMissingPositive.test();*/
-        RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
-        removeLinkedListElements.test();
+/*        RemoveLinkedListElements removeLinkedListElements = new RemoveLinkedListElements();
+        removeLinkedListElements.test();*/
+        MaxPriorityQueue maxPriorityQueue = new MaxPriorityQueue();
+        maxPriorityQueue.insert(1);
+        maxPriorityQueue.insert(2);
+        maxPriorityQueue.insert(5);
+        maxPriorityQueue.insert(8);
+        maxPriorityQueue.insert(4);
+        maxPriorityQueue.insert(3);
+        maxPriorityQueue.insert(1);
+        maxPriorityQueue.insert(9);
+
+        maxPriorityQueue.showResult();
+        System.out.println();
+        maxPriorityQueue.popResult();
 
 
     }
