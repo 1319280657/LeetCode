@@ -83,8 +83,13 @@ public class Main {
         MaxPriorityQueue maxPriorityQueue = new MaxPriorityQueue();
         maxPriorityQueue.test();
 		
+<<<<<<< HEAD
 		/*
 		* 测试git的更新
+=======
+		/**
+		* 测试git
+>>>>>>> master
 		*/
 
 
